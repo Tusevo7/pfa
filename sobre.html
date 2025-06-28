@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a PFA - Polícia Federal Aduaneira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a3e8c;
+            --secondary-color: #e31837;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--secondary-color);
+            display: inline-block;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-caption {
+            padding: 15px;
+            background-color: white;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .image-grid img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-shield-alt"></i> Polícia Fiscal Aduaneira</h1>
+            <p>Conheça mais sobre nossa história e operações</p>
+        </div>
+    </header>
+
+    <section id="destaque">
+        <div class="container">
+            <img src="assets/marcha.jpg" 
+                 alt="Agentes da PFA em operação" class="hero-image">
+        </div>
+    </section>
+
+    <section id="historia">
+        <div class="container">
+            <h2><i class="fas fa-landmark"></i> Nossa História</h2>
+            
+            <div class="image-grid">
+                <img src="assets/chefes.jpg" 
+                     alt="Histórico da PFA">
+                <img src="assets/Cw3vZaElZoD5uzcZHUNM1R5pTAdBuLe6DlQbGirm.jpeg" 
+                     alt="Fronteiras brasileiras">
+            </div>
+            
+            <p>A Polícia Fiscal Aduaneira em Angola comemorou 29 anos de existência em 2025, tendo sido fundada em 1996. A sua criação visou reforçar o controlo aduaneiro e combater a fraude fiscal. No Bengo, a unidade surgiu em 1999, com apenas 10 efetivos iniciais. </p>
+        </div>
+    </section>
+
+    <section id="operacoes" style="background-color: var(--light-color);">
+        <div class="container">
+            <h2><i class="fas fa-tasks"></i> Nossas Operações</h2>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="assets/formacao.jpg" 
+                         alt="Operação de fronteira">
+                    <div class="gallery-caption">
+                        <h3>Operação Fronteira Segura</h3>
+                        <p>Controle aduaneiro em postos de fronteira</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/chefe.jpg" 
+                         alt="Fiscalização em aeroportos">
+                    <div class="gallery-caption">
+                        <h3>Operação Aeroportos</h3>
+                        <p>Fiscalização em aeroportos internacionais</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/GpW7ef8C3JaFniFcfG0AK8w3KzJLgSDIsYKowbQ6.jpeg" 
+                         alt="Portos e alfândegas">
+                    <div class="gallery-caption">
+                        <h3>Operação Portuária</h3>
+                        <p>Inspeção de cargas em portos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipamentos">
+        <div class="container">
+            <h2><i class="fas fa-tools"></i> Nossos Equipamentos</h2>
+            
+            <div class="image-grid">
+                <img src="assets/Cw3vZaElZoD5uzcZHUNM1R5pTAdBuLe6DlQbGirm.jpeg" 
+                     alt="Tecnologia de fiscalização">
+                <img src="assets/GpW7ef8C3JaFniFcfG0AK8w3KzJLgSDIsYKowbQ6.jpeg" 
+                     alt="Viaturas da PFA">
+            </div>
+            
+            <p>Utilizamos tecnologia de ponta para nossas operações, incluindo scanners de alta tecnologia, sistemas de reconhecimento facial e veículos especializados para atuação em diferentes terrenos.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>Polícia Fiscal Aduaneira</h3>
+            <p>Protegendo as fronteiras de Angola desde 1996</p>
+            <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Voltar para a Página Principal</a>
+        </div>
+    </footer>
+</body>
+</html>
