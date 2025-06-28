@@ -315,7 +315,7 @@
         .hero {
             height: 100vh;
             min-height: 800px;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/GpW7ef8C3JaFniFcfG0AK8w3KzJLgSDIsYKowbQ6.jpeg') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('GpW7ef8C3JaFniFcfG0AK8w3KzJLgSDIsYKowbQ6.jpeg') no-repeat center center/cover;
             color: white;
             display: flex;
             align-items: center;
@@ -496,7 +496,7 @@
         /* Commander Section */
         .commander {
             padding: 120px 0;
-            background: linear-gradient(135deg, rgba(26, 62, 140, 0.92), rgba(26, 62, 140, 0.97)), url('assets/marcha.jpg') no-repeat center center/cover;
+            background: linear-gradient(135deg, rgba(26, 62, 140, 0.92), rgba(26, 62, 140, 0.97)), url('marcha.jpg') no-repeat center center/cover;
             color: white;
             position: relative;
             overflow: hidden;
@@ -922,7 +922,7 @@
         /* Stats Section */
         .stats {
             padding: 120px 0;
-            background: linear-gradient(rgba(26, 62, 140, 0.92), rgba(26, 62, 140, 0.95)), url('assets/Cw3vZaElZoD5uzcZHUNM1R5pTAdBuLe6DlQbGirm.jpeg') no-repeat center center/cover;
+            background: linear-gradient(rgba(26, 62, 140, 0.92), rgba(26, 62, 140, 0.95)), url('Cw3vZaElZoD5uzcZHUNM1R5pTAdBuLe6DlQbGirm.jpeg') no-repeat center center/cover;
             color: white;
             text-align: center;
             position: relative;
